@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ОТРЯД ПРИМАТ</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="images/logo.png" type="image/png">
+	<script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script>
+	SmoothScroll({
+   	// Время скролла 400 = 0.4 секунды
+	    animationTime    : 400,
+    // Размер шага в пикселях 
+ 	   stepSize         : 50,
+
+    // Дополнительные настройки:
+    
+    // Ускорение 
+  	  accelerationDelta : 30,  
+    // Максимальное ускорение
+   	 accelerationMax   : 2,   
+
+    // Поддержка клавиатуры
+   	 keyboardSupport   : true,  
+    // Шаг скролла стрелками на клавиатуре в пикселях
+  	  arrowScroll       : 50,
+
+    // Pulse (less tweakable)
+    // ratio of "tail" to "acceleration"
+   	 pulseAlgorithm   : true,
+  	  pulseScale       : 4,
+  	  pulseNormalize   : 1,
+
+    // Поддержка тачпада
+  	  touchpadSupport   : true,
+	})
+	</script>
+	<script>
+	$(document).ready(function() {
+   		var margin = 0; // переменная для контроля докрутки
+   		$("a").click(function() { // тут пишите условия, для всех ссылок или для конкретных
+      		$("html, body").animate({
+         		scrollTop: $($(this).attr("href")).offset().top+margin+ "px" // .top+margin - ставьте минус, если хотите увеличить отступ
+      		}, {
+         		duration: 1400, // тут можно контролировать скорость
+         		easing: "swing"
+      		});
+      		return false;
+  		});
+	});
+	</script>
+</head>
+<body>
+	<header>
+	<div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
+        <div class="container">
+            <nav>
+                <h1 class="brand"><a href="index.html">PR<span>IM</span>AT</a></h1>
+                <ul>
+                    <li><a href="#hamburger">Home</a></li>
+                    <li><a href="#admin">Administration</a></li>
+                    <li><a href="#join">Join us</a></li>
+                    <li><a href="#coming_soon">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/logo.png" width="300">
+            <p class="glitch">
+    			<span aria-hidden="true">PRIMAT</span>
+    			PRIMAT
+  				<span aria-hidden="true">PRIMAT</span>
+ 			 </p>
+            <h2>ОТРЯД-ПРИМАТ - лучший Discord сервер на котором ты можешь
+            найти себе лучших друзей с которыми тебе будет не скучно
+        	общаться. А так же если тебе повезёт, и вы окажетесь в одном городе,
+        	почему бы вместе не погулять?</h2>
+        </div>
+    </header>
+    <div class="line"></div>
+	<div class="main" id="admin">
+		<h1>Рады вам представить наш администрационный состав</h1>
+		<div class="tables">
+			<div class="velfoy">
+				<img src="https://cdn.discordapp.com/avatars/542526378948427776/260ac03e4c491c61d1322d7dd97bbfcc.webp?size=128" width="100">
+				<span>👑БАТЯ👑</span>
+				<h2>Velfoy &nbsp; &nbsp; [ГЛ. АДМИН]</h2>
+				<p>Главный администратор принимающий основные решения по изменению сервера
+				или бану участника. Любые вопросы по крупному обновлению сервера
+				обсуждаются с ним</p>
+			</div>
+			<div class="l1te">
+				<img src="https://cdn.discordapp.com/avatars/851140150452289566/2eaade557a2f6d3a5552cdda87c221ae.webp?size=80" width="100">
+				<span>🌊ШЕСТЁРКИ🌊</span>
+				<h2>L 1 t e &nbsp; &nbsp; [НАСТРОЙКА БОТОВ]</h2>
+				<p>Главный ответственный за настройку ботов и их создание/доработку. Любые
+				вопросы по поводу ботов, к примеру идеи для улучшения удобства сервера,
+				рассматриваются и в случае их одобрения создаются им</p>
+			</div>
+			<div class="kopikorm">
+				<img src="https://cdn.discordapp.com/avatars/385654055659110403/fbdac36c2dd9a3709fe9a903064db909.webp?size=80" width="100">
+				<span>🌊ШЕСТЁРКИ🌊</span>
+				<h3>KopiKorm &nbsp; &nbsp; [ДИЗАЙН]</h3>
+				<p>Главный ответственный за дизайн нашего сервера. Любые вопросы по изменению/дополнению/улучшению дизайна обсуждаются и рассматриваются им</p>
+			</div>
+			<br>
+			<h4>А так же наш модераторский состав</h4>
+			<div class="ress">
+				<img src="https://cdn.discordapp.com/avatars/457884535862853652/971729927fa65c4b9bf9a87a8635e829.webp?size=80" width="100">
+				<span>💢2 Гуля💢</span>
+				<h2>Ress &nbsp; &nbsp; [Модератор]</h2>
+				<p>No Descripton.</p>
+			</div>
+			<div class="poki">
+				<img src="https://cdn.discordapp.com/avatars/517916948328349696/ab4f293e086093ea2d007cc2f4f3d78f.webp?size=80" width="100">
+				<span>💢2 Гуля💢</span>
+				<h2>Poki &nbsp; &nbsp; [Модератор]</h2>
+				<p>No Descripton.</p>
+			</div>
+		</div>
+	</div>
+	<div class="line"></div>
+	<div class="join" id="join">
+		<h1>Хочешь к нам? Присоединяйся!</h1>
+		<h1>Мы всегда рады новым участникам</h1>
+		<a href="https://discord.gg/rbQ3q9z57Z" class="joinBtn" target = "_blank">Join to Discord</a>
+	</div>
+</body>
+</html>
+<!-- https://img5.goodfon.ru/wallpaper/nbig/9/e6/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-kaguya-shin.jpg -->
